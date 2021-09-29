@@ -15,7 +15,7 @@ plt.close('all')
 # Circuit parameters
 
 
-R_bus=1e-4
+R_bus=1e-6
 R_series=1e-2
 R_int=5e-2
 I_app=80.0
@@ -44,3 +44,5 @@ output = lp.solve(netlist=netlist,
                   protocol=protocol,
                   output_variables=output_variables,
                   htc=htc)
+fig, ax = plt.subplots()
+lp.cell_scatter_plot(ax=ax, c=output[4, 400, :], val_text=True, cellno_text=True)
