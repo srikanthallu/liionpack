@@ -1,6 +1,54 @@
 # [Unreleased](https://github.com/pybamm-team/liionpack/)
 
-# [v0.3.3](https://github.com/pybamm-team/PyBaMM/tree/v0.3.3) - 2023-01-05
+## Features
+
+- ([#PR](link))
+
+## Bug fixes
+
+- ([#PR](link))
+
+## Breaking changes
+
+- ([#PR](link))
+
+# [v0.3.5](https://github.com/pybamm-team/liionpack/) - 2023-04-05
+
+## Features
+
+- Add pre commit and migrate to ruff ([#232](https://github.com/pybamm-team/liionpack/pull/232))
+
+## Bug fixes
+
+- Fix bug in cell currents being out of step ([#245](https://github.com/pybamm-team/liionpack/pull/245))
+- Test only on PyBaMM stable ([#229](https://github.com/pybamm-team/liionpack/pull/229))
+
+## Breaking changes
+
+- Handle change in variable name for next PyBaMM release ([#240](https://github.com/pybamm-team/liionpack/pull/240))
+
+## Chores
+
+- Update pre-commit hooks ([#247](https://github.com/pybamm-team/liionpack/pull/247))
+
+# [v.0.3.4](https://github.com/pybamm-team/liionpack/tree/v.0.3.4) - 2023-03-03
+
+## This version was yanked from PyPi due to an accidental early release that addressed changes coming into PyBaMM in version 23.3.
+
+## Features
+
+-   Option to specify parallel-strings or series-groups when creating netlist ([#221](https://github.com/pybamm-team/liionpack/pull/221))
+
+## Bug fixes
+
+-   Compatibility with PyBaMM version 23.2: remove timescale from model options and change a notebook so that particle radius is no longer an input. This is temporarily unavailable in PyBaMM for geometry parameters. ([#222](https://github.com/pybamm-team/liionpack/pull/221))
+
+## Breaking changes
+
+-   Drop support for Python 3.7 ([#216](https://github.com/pybamm-team/liionpack/pull/216))
+
+
+# [v0.3.3](https://github.com/pybamm-team/liionpack/tree/v0.3.3) - 2023-01-05
 ## Bug fixes
 
 -   Update the codecov.yaml with develop branch ([#180](https://github.com/pybamm-team/liionpack/pull/180))
@@ -21,7 +69,7 @@
 -   Change default branch on github to develop to fix benchmarking issues ([#184](https://github.com/pybamm-team/liionpack/pull/184))
 -   Migrate to hatch packaging ([#182](https://github.com/pybamm-team/liionpack/pull/182))
 
-# [v0.3.2](https://github.com/pybamm-team/PyBaMM/tree/v0.3.2) - 2022-07-01
+# [v0.3.2](https://github.com/pybamm-team/liionpack/tree/v0.3.2) - 2022-07-01
 
 ## Bug fixes
 
@@ -33,7 +81,7 @@
 
 -   Remove support for dask as it reduces dependencies and does not perform as well as ray for our use case ([#160](https://github.com/pybamm-team/liionpack/pull/160))
 
-# [v0.3.1](https://github.com/pybamm-team/PyBaMM/tree/v0.3.1) - 2022-05-24
+# [v0.3.1](https://github.com/pybamm-team/liionpack/tree/v0.3.1) - 2022-05-24
 
 ## Features
 
@@ -50,7 +98,7 @@
 
 -   Change solver class names to camelcase. Does not break usage if using wrapper solve functions ([#132](https://github.com/pybamm-team/liionpack/pull/132))
 
-# [v0.3](https://github.com/pybamm-team/PyBaMM/tree/v0.3) - 2022-02-17
+# [v0.3](https://github.com/pybamm-team/liionpack/tree/v0.3) - 2022-02-17
 This is the first official version of liionpack.
 Please note that liionpack and PyBaMM are both still under active development, and so the API may change in the future.
 
